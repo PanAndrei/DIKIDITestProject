@@ -11,6 +11,8 @@
 		B64C30F629486A6C008DA376 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64C30F529486A6C008DA376 /* ContentView.swift */; };
 		B64C30F829486A6D008DA376 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B64C30F729486A6D008DA376 /* Assets.xcassets */; };
 		B64C30FB29486A6D008DA376 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B64C30FA29486A6D008DA376 /* Preview Assets.xcassets */; };
+		B64C310529486D97008DA376 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64C310429486D97008DA376 /* MainView.swift */; };
+		B64C3108294879F1008DA376 /* ResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64C3107294879F1008DA376 /* ResponseModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		B64C30F529486A6C008DA376 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B64C30F729486A6D008DA376 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B64C30FA29486A6D008DA376 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B64C310429486D97008DA376 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		B64C3107294879F1008DA376 /* ResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +55,8 @@
 		B64C30F229486A6C008DA376 /* DIKIDITestProject */ = {
 			isa = PBXGroup;
 			children = (
-				B64C30F329486A6C008DA376 /* DIKIDITestProjectApp.swift */,
-				B64C30F529486A6C008DA376 /* ContentView.swift */,
+				B64C3106294876F8008DA376 /* Models */,
+				B64C310129486D4C008DA376 /* Views */,
 				B64C30F729486A6D008DA376 /* Assets.xcassets */,
 				B64C30F929486A6D008DA376 /* Preview Content */,
 			);
@@ -65,6 +69,40 @@
 				B64C30FA29486A6D008DA376 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B64C310129486D4C008DA376 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B64C310229486D55008DA376 /* Root */,
+				B64C310329486D87008DA376 /* Main */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B64C310229486D55008DA376 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				B64C30F329486A6C008DA376 /* DIKIDITestProjectApp.swift */,
+				B64C30F529486A6C008DA376 /* ContentView.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		B64C310329486D87008DA376 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				B64C310429486D97008DA376 /* MainView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		B64C3106294876F8008DA376 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B64C3107294879F1008DA376 /* ResponseModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +176,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B64C30F629486A6C008DA376 /* ContentView.swift in Sources */,
+				B64C310529486D97008DA376 /* MainView.swift in Sources */,
+				B64C3108294879F1008DA376 /* ResponseModel.swift in Sources */,
 				B64C30F429486A6C008DA376 /* DIKIDITestProjectApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -195,7 +235,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -249,7 +289,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -275,6 +315,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -284,7 +325,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -304,6 +345,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -313,7 +355,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
